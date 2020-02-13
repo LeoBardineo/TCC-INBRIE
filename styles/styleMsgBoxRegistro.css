@@ -1,0 +1,62 @@
+.msg-box{
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.icon-box{
+    width: 15%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box.error-box{
+    background-color: #DB3543;
+}
+
+.icon-box > .fas{
+    font-size: 25px;
+    position: relative;
+    color: white;
+}
+
+.fa-exclamation-triangle{
+    color: white;
+}
+
+.text-box{
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 85%;
+    height: 100%;
+    padding: 10px;
+}
+
+.text-box.error-box{
+    background: #F53B4A;
+}
+
+.text-box > h1{
+    font-size: 20px;
+    color: white;
+}
+
+.text-box > h2{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icon-box.sucess-box{
+    background-color: #057341;
+}
+
+.text-box.sucess-box{
+    background: #07B365;
+}

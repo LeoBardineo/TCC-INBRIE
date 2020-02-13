@@ -1,0 +1,31 @@
+.tags-input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-tag{
+    margin-bottom: 30px;
+}
+
+.tag{
+    padding: 10px;
+    background: #363636;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-tag{
+    margin-right: 10px;
+}
+
+.close-tag{
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}

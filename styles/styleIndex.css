@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.preload *{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+html{
+    background-color: #171717;
+}
+
+/* ----------------- Seção 1 ----------------- */
+
+.section1{
+    position: relative;
+    width: 100vw;
+    height: 92vh;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao1{
+    width: 80%;
+    height: 50%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagem a esquerda */
+.at-left-section{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.at-left-section > img{
+    max-width: 100%;
+}
+
+/* Separador */
+.separador-vertical{
+    width: 5px;
+    height: 100%;
+    background-color: #F48C1C;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Secao da direita */
+.at-right-section{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* INBRIE */
+.at-right-section > img{
+    width: 50%;
+}
+
+/* Paragrafo */
+.at-right-section > p{
+    color: #808080;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Explorar novos artistas */
+.explore{
+    color: #F48C1C;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Botão REGISTRAR */
+.at-right-section > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    background-color: #F48C1C;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* ----------------- Outras seções ----------------- */
+
+.section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section2{
+    position: relative;
+    width: 100vw;
+    height: 150vh;
+    padding-top: 10vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-porque, .section-contato, .section-comunidade, .section-quem-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title{
+    color: #F48C1C;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.separador-horizontal{
+    width: 80%;
+    height: 5px;
+    background-color: #F48C1C;
+    border-radius: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.section-porque > h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card-container{
+    width: 90vw;
+    height: 60%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container > .card{
+    width: 25%;
+    height: 100%;
+    margin-left: 20px;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #363636;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > img{
+    width: 30%;
+}
+
+.card > h2{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.normal-title{
+    margin-top: 30px;
+}
+
+.last-title{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.card > p{
+    color: #808080;
+    font-size: 23px;
+    text-align: center;
+}
+
+.card.first{
+    margin-left: 0px;
+}
+
+.talento-icon{
+    margin-bottom: 10px;
+}
+
+.nextCardRight{
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.nextCardLeft{
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.nextCardRight:hover, .nextCardLeft:hover{
+    transition: 0.25s color ease-in-out;
+    color: #F48C1C;
+}
+
+.section-descricao{
+    color: #808080;
+    font-size: 25px;
+    text-align: center;
+    max-width: 890px;
+}
+
+.section-descricao > p > a{
+    color: #808080;
+    text-decoration: underline;
+}
+
+.container-input-contato > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-text-contato{
+    width: 890px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: white;
+    background: none;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+}
+
+.input-textarea-contato{
+    width: 890px;
+    height: 200px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+}
+
+.input-submit-contato{
+    width: 50%;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: #F48C1C;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    outline: none;
+}
+
+.comunidade-segmentos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+}
+
+
+.comunidade-logo{
+    position: absolute;
+    max-height: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.row-text{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.photo-container, .literatura-container, .music-container, .ilustracao-container{
+    width: 50%;
+}
+
+.photo-container, .music-container, .ilustracao-container, .literatura-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alignmiddle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-container{
+    background-color: rgba(4, 195, 87, 0.4);
+    border-top-left-radius: 25px;
+}
+
+.music-container{
+    background-color: rgba(244, 140, 28, 0.4);
+    border-top-right-radius: 25px;
+}
+
+.literatura-container{
+    background-color: rgba(167, 153, 128, 0.4);
+    border-bottom-left-radius: 25px;
+}
+
+.ilustracao-container{
+    background-color: rgba(244, 90, 103, 0.4);
+    border-bottom-right-radius: 25px;
+}
+
+.row-text > .photo-container > .photo-text > p{
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+}
+.row-text > .photo-container > .photo-text > h1{
+    font-size: 25px;
+    color: #04C257;
+    text-align: center;
+}
+
+.alignmiddle > img{
+    height: 75px;
+}
+
+.row-text > .music-container > .music-text > p{
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+}
+.row-text > .music-container > .music-text > h1{
+    font-size: 25px;
+    color: #F48C1C;
+    text-align: center;
+}
+
+.row-text > .literatura-container > .literatura-text > p{
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+}
+.row-text > .literatura-container > .literatura-text > h1{
+    font-size: 25px;
+    color: #A79980;
+    text-align: center;
+}
+
+.row-text > .ilustracao-container > .ilustracao-text > p{
+    font-size: 20px;
+    color: #808080;
+    text-align: center;
+}
+.row-text > .ilustracao-container > .ilustracao-text > h1{
+    font-size: 25px;
+    color: #F45A66;
+    text-align: center;
+}
+
+.fa-facebook-square:hover{
+    transition: color 0.25s ease-in-out;
+    color: #4267b2;
+}
+
+.fa-instagram:hover{
+    transition: color 0.25s ease-in-out;
+    color: #F00075;
+}
+
+.fa-twitter:hover{
+    transition: color 0.25s ease-in-out;
+    color: #38A1F3;
+}
+
+.equipe-container{
+    width: 90vw;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.integrante{
+    width: 20%;
+    height: 100%;
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.integrante > h2{
+    color: white;
+    font-size: 30px;
+}
+
+.integrante > p{
+    color: #808080;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.photo-integrante{
+    max-width: 100%;
+}
+
+@media (max-width: 1366px) {
+    .card-container { height: 40vh; }
+    .card > h2 { font-size: 25px; }
+    .card > p { font-size: 18px; }
+    .section-title { font-size: 20px; }
+    .section-descricao { font-size: 20px; }
+    .integrante > h2 { font-size: 25px; }
+    .integrante > p { font-size: 15px; }
+}
+
+@media (max-width: 1120px) {
+    .section{ height: 100%; }
+    .section2{ height: 100%; }
+    .card-container{ width: 95vw; }
+}

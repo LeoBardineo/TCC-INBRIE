@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.preload *{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+html{
+    background-color: #171717;
+}
+
+h1{
+    color: #F48C1C;
+    font-weight: 700;
+}
+
+h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+p{
+    margin-top: 10px;
+    color: gray;
+}
+
+label{
+    font-weight: 500;
+}
+
+.logo-music{
+    margin-top: 20px;
+    width: 100px;
+}
+
+/* ------------------ Container geral ------------------ */
+
+.post-container{
+    width: 80vw;
+    max-width: 800px;
+    min-width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    background: #212121;
+}
+
+/* ------------------ Container do formulário ------------------ */
+
+.form-container::before{
+    content: '';
+    width: 70%;
+    height: 5px;
+    border-radius: 5px;
+    display: block;
+    background-color: #F48C1C;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.form-container > form{
+    text-align: initial;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container > form > label{
+    margin-bottom: 5px;
+}
+
+.input-normal{
+    background: #181818;
+    height: 40px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    transition: border ease-in-out 0.15s;
+}
+
+.input-normal:focus{
+    border: 1px solid #F48C1C;
+}
+
+#descinput{
+    resize: none;
+    height: 150px;
+}
+
+#typeinput, #genreinput{
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ------------------ Faixas ------------------ */
+
+.music-container{
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.track-container{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-container > label{
+    margin-bottom: 5px;
+}
+
+.new-music{
+    width: 320px;
+    height: 60px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #363636;
+    color: #F48C1C;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-music:hover{
+    background-color: #F48C1C;
+    border: 1px solid #F48C1C;
+    color: white;
+    transition: border ease-in-out 0.15s, background ease-in-out 0.15s;
+}
+
+.fa-play{
+    color: #F48C1C;
+}
+
+.fa-pause{
+    color: #F48C1C;
+}
+
+.input-track{
+    background: #181818;
+    width: 100%;
+    height: 20px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: white;
+    outline: none;
+    padding: 20px;
+    font-size: 16px;
+    transition: border ease-in-out 0.15s;
+}
+
+.input-track:focus{
+    border: 1px solid #5e5e5e;
+}
+
+.fa-plus-circle{
+    font-size: 25px;
+}
+
+.track-options{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.descButton, .subirButton{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: color ease-in-out 0.15s;
+}
+
+.descButton{
+    margin-left: auto;
+}
+
+.descButton:hover, .subirButton:hover{
+    color: #F48C1C;
+}
+
+.delete-track{
+    width: 25px;
+    height: 25px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color ease-in-out 0.15s;
+    margin-left: 20px;
+}
+
+.delete-track:hover{
+    color: #d42525;
+}
+
+.music-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-newmusic{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 4;
+}
+
+.track-file{
+    width: 0px;
+    height: 0px;
+}
+
+/* ------------------ Preview image ------------------ */
+
+.preview-container{
+    width: 320px;
+    height: 320px;
+    background: #181717;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    transition: border ease-in-out 0.15s;
+    overflow: hidden;
+}
+
+.preview-container:hover{
+    border: 1px solid #F48C1C;
+}
+
+.defaultpreview{
+    width: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.previewimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-file-container{
+    width: 320px;
+    height: 60px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #363636;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.input-file-container > svg{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 40px;
+    fill: #F48C1C;
+    pointer-events: none;
+}
+
+.input-file-container:hover{
+    background-color: #F48C1C;
+}
+
+.input-file-container:hover > svg{
+    fill: white;
+}
+
+.input-file-container:hover > .input-file-span{
+    color: white;
+}
+
+.input-file{
+    width: 100%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 4;
+}
+
+.input-file-span{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    font-size: 18px;
+    color: #F48C1C;
+    pointer-events: none;
+}
+
+/* ------------------ Postar ------------------ */
+
+.backbutton{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    margin-right: 10px;
+    background: #363636;
+    border: 1px solid #333333;
+    transition: border ease-in-out 0.15s, background ease-in-out 0.15s;
+}
+
+.backbutton:hover{
+    background: #be3d3d;
+    border: 1px solid #ff5151;
+}
+
+#postarinput{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 16px;
+    color: #F48C1C;
+    background: #363636;
+    border: 1px solid #333333;
+    margin-bottom: 0px;
+    transition: border ease-in-out 0.15s, background ease-in-out 0.15s;
+}
+
+#postarinput:hover{
+    background: #F48C1C;
+    border: 1px solid #F48C1C;
+    color: white;
+}
