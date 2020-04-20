@@ -3,7 +3,7 @@ Rede social com o objetivo de trazer mais visibilidade aos artistas independente
   
 Trabalho de conclusão do curso técnico em informática, desenvolvimento começou em outubro de 2019 e terminou em dezembro do mesmo ano. 
   
-Por ser um dos meus primeiros projetos, pode conter algumas falhas, código não muito legível, e falta de responsividade. Foi feito em uma época em que eu ainda estava aprendendo as tecnologias aos poucos e com prazo apertado.
+Por ser um dos meus primeiros projetos, pode conter algumas falhas, código não muito legível, falta de uma arquitetura de software MVC, falta da orientação a objetos (não sabia na época então escrevi tudo em procedural) e falta de responsividade. Foi feito em uma época em que eu ainda estava aprendendo as tecnologias aos poucos e com prazo apertado, porém foi um projeto que eu me dediquei muito e investi muito tempo e carinho nele.
   
 Você pode acessá-lo [aqui](http://inbrie.000webhostapp.com/).
 
